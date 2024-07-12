@@ -1,5 +1,10 @@
 [
-
+    {
+        "label": "game",
+        "type": "Class",
+        "description": "The global game object.",
+        "insertText": "game"
+    },
     {
         "label": "workspace",
         "type": "Class",
