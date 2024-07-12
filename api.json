@@ -148,5 +148,89 @@
         "type": "Function",
         "description": "Returns the first child of the Instance with the given name.",
         "insertText": "Instance:FindFirstChild(${1:name})"
+    },
+    {
+        "label": "_G",
+        "type": "Keyword",
+        "description": "Global environment table.",
+        "insertText": "_G"
+    },
+    {
+        "label": "_VERSION",
+        "type": "Keyword",
+        "description": "Lua version string.",
+        "insertText": "_VERSION"
+    },
+    {
+        "label": "Enum",
+        "type": "Class",
+        "description": "Roblox enumeration utility.",
+        "insertText": "Enum"
+    },
+    {
+        "label": "plugin",
+        "type": "Class",
+        "description": "The plugin object for Roblox Studio plugins.",
+        "insertText": "plugin"
+    },
+    {
+        "label": "shared",
+        "type": "Class",
+        "description": "Shared data and functions.",
+        "insertText": "shared"
+    },
+    {
+        "label": "script",
+        "type": "Class",
+        "description": "The script object representing the current script.",
+        "insertText": "script"
+    },
+    {
+        "label": "DebuggerManager",
+        "type": "Keyword",
+        "description": "Manages the debugger in Roblox Studio.",
+        "insertText": "DebuggerManager"
+    },
+    {
+        "label": "elapsedTime",
+        "type": "Keyword",
+        "description": "Elapsed time since the start of the game.",
+        "insertText": "elapsedTime"
+    },
+    {
+        "label": "LoadLibrary",
+        "type": "Keyword",
+        "description": "Loads a library in Roblox Lua.",
+        "insertText": "LoadLibrary"
+    },
+    {
+        "label": "PluginManager",
+        "type": "Keyword",
+        "description": "Manages plugins in Roblox Studio.",
+        "insertText": "PluginManager"
+    },
+    {
+        "label": "settings",
+        "type": "Keyword",
+        "description": "Global settings object.",
+        "insertText": "settings"
+    },
+    {
+        "label": "typeof",
+        "type": "Keyword",
+        "description": "Returns the type of a value.",
+        "insertText": "typeof"
+    },
+    {
+        "label": "UserSettings",
+        "type": "Keyword",
+        "description": "User settings and preferences.",
+        "insertText": "UserSettings"
+    },
+    {
+        "label": "HumanoidRootPart",
+        "type": "Keyword",
+        "description": "Represents the root part of a humanoid character.",
+        "insertText": "HumanoidRootPart"
     }
 ]
