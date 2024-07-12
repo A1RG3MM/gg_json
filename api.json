@@ -15,7 +15,7 @@
         "label": "Instance.new",
         "type": "Function",
         "description": "Creates a new instance of a Roblox object.",
-        "insertText": "Instance.new"
+        "insertText": "Instance.new(${1:className})"
     },
     {
         "label": "print",
@@ -70,5 +70,83 @@
         "type": "Class",
         "description": "Represents the user's mouse.",
         "insertText": "Mouse"
+    },
+    {
+        "label": "Players",
+        "type": "Class",
+        "description": "The global Players service.",
+        "insertText": "Players"
+    },
+    {
+        "label": "Player",
+        "type": "Class",
+        "description": "Represents a player in the game.",
+        "insertText": "Player"
+    },
+    {
+        "label": "UserInputService",
+        "type": "Class",
+        "description": "Provides access to user input.",
+        "insertText": "UserInputService"
+    },
+    {
+        "label": "RunService",
+        "type": "Class",
+        "description": "Provides access to the game's run loop.",
+        "insertText": "RunService"
+    },
+    {
+        "label": "tick",
+        "type": "Function",
+        "description": "Returns the time elapsed since the UNIX epoch.",
+        "insertText": "tick()"
+    },
+    {
+        "label": "time",
+        "type": "Function",
+        "description": "Returns the time in seconds since the start of the game session.",
+        "insertText": "time()"
+    },
+    {
+        "label": "delay",
+        "type": "Function",
+        "description": "Runs a function after a delay.",
+        "insertText": "delay(${1:seconds}, ${2:function})"
+    },
+    {
+        "label": "spawn",
+        "type": "Function",
+        "description": "Runs a function on a separate thread.",
+        "insertText": "spawn(${1:function})"
+    },
+    {
+        "label": "Instance:IsA",
+        "type": "Function",
+        "description": "Checks if an Instance is a certain class.",
+        "insertText": "Instance:IsA(${1:className})"
+    },
+    {
+        "label": "Instance:Clone",
+        "type": "Function",
+        "description": "Creates a copy of the Instance and its descendants.",
+        "insertText": "Instance:Clone()"
+    },
+    {
+        "label": "Instance:Destroy",
+        "type": "Function",
+        "description": "Removes the Instance and its descendants.",
+        "insertText": "Instance:Destroy()"
+    },
+    {
+        "label": "Instance:GetChildren",
+        "type": "Function",
+        "description": "Returns a table containing all the children of the Instance.",
+        "insertText": "Instance:GetChildren()"
+    },
+    {
+        "label": "Instance:FindFirstChild",
+        "type": "Function",
+        "description": "Returns the first child of the Instance with the given name.",
+        "insertText": "Instance:FindFirstChild(${1:name})"
     }
 ]
