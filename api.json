@@ -1,0 +1,74 @@
+[
+    {
+        "label": "game",
+        "type": "Class",
+        "description": "The global game object.",
+        "insertText": "game"
+    },
+    {
+        "label": "workspace",
+        "type": "Class",
+        "description": "The global workspace object.",
+        "insertText": "workspace"
+    },
+    {
+        "label": "Instance.new",
+        "type": "Function",
+        "description": "Creates a new instance of a Roblox object.",
+        "insertText": "Instance.new"
+    },
+    {
+        "label": "print",
+        "type": "Function",
+        "description": "Outputs text to the console.",
+        "insertText": "print(${1:Text})"
+    },
+    {
+        "label": "wait",
+        "type": "Function",
+        "description": "Yields the current thread for a specified number of seconds.",
+        "insertText": "wait(${1:seconds})"
+    },
+    {
+        "label": "Vector3.new",
+        "type": "Constructor",
+        "description": "Creates a new Vector3 object.",
+        "insertText": "Vector3.new(${1:x}, ${2:y}, ${3:z})"
+    },
+    {
+        "label": "Part",
+        "type": "Class",
+        "description": "A basic building block in Roblox.",
+        "insertText": "Part"
+    },
+    {
+        "label": "BrickColor.new",
+        "type": "Constructor",
+        "description": "Creates a new BrickColor object.",
+        "insertText": "BrickColor.new(${1:colorName})"
+    },
+    {
+        "label": "Color3.new",
+        "type": "Constructor",
+        "description": "Creates a new Color3 object.",
+        "insertText": "Color3.new(${1:r}, ${2:g}, ${3:b})"
+    },
+    {
+        "label": "math.random",
+        "type": "Function",
+        "description": "Generates a random number.",
+        "insertText": "math.random(${1:lower}, ${2:upper})"
+    },
+    {
+        "label": "Humanoid",
+        "type": "Class",
+        "description": "Represents a character's humanoid properties.",
+        "insertText": "Humanoid"
+    },
+    {
+        "label": "Mouse",
+        "type": "Class",
+        "description": "Represents the user's mouse.",
+        "insertText": "Mouse"
+    }
+]
