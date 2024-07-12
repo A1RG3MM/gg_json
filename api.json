@@ -232,5 +232,161 @@
         "type": "Keyword",
         "description": "Represents the root part of a humanoid character.",
         "insertText": "HumanoidRootPart"
+    },
+    {
+        "label": "Drawing",
+        "type": "Class",
+        "description": "Handles 2D and 3D drawing in Roblox.",
+        "insertText": "Drawing"
+    },
+    {
+        "label": "debug",
+        "type": "Class",
+        "description": "Provides debugging functions.",
+        "insertText": "debug"
+    },
+    {
+        "label": "Instance",
+        "type": "Class",
+        "description": "Represents instances of objects in Roblox.",
+        "insertText": "Instance"
+    },
+    {
+        "label": "Color3",
+        "type": "Class",
+        "description": "Represents a color with red, green, and blue components.",
+        "insertText": "Color3"
+    },
+    {
+        "label": "Vector3",
+        "type": "Class",
+        "description": "Represents a 3-dimensional vector.",
+        "insertText": "Vector3"
+    },
+    {
+        "label": "Vector2",
+        "type": "Class",
+        "description": "Represents a 2-dimensional vector.",
+        "insertText": "Vector2"
+    },
+    {
+        "label": "BrickColor",
+        "type": "Class",
+        "description": "Represents a color used for bricks and parts.",
+        "insertText": "BrickColor"
+    },
+    {
+        "label": "math",
+        "type": "Class",
+        "description": "Provides mathematical functions and constants.",
+        "insertText": "math"
+    },
+    {
+        "label": "table",
+        "type": "Class",
+        "description": "Provides functions for manipulating tables.",
+        "insertText": "table"
+    },
+    {
+        "label": "string",
+        "type": "Class",
+        "description": "Provides functions for manipulating strings.",
+        "insertText": "string"
+    },
+    {
+        "label": "coroutine",
+        "type": "Class",
+        "description": "Provides functions for coroutine manipulation.",
+        "insertText": "coroutine"
+    },
+    {
+        "label": "ClickDetector",
+        "type": "Class",
+        "description": "Detects clicks on parts.",
+        "insertText": "ClickDetector"
+    },
+    {
+        "label": "LocalScript",
+        "type": "Class",
+        "description": "Represents a script that runs on the client.",
+        "insertText": "LocalScript"
+    },
+    {
+        "label": "Model",
+        "type": "Class",
+        "description": "Represents a collection of parts and other objects.",
+        "insertText": "Model"
+    },
+    {
+        "label": "ModuleScript",
+        "type": "Class",
+        "description": "Represents a script that can be required by other scripts.",
+        "insertText": "ModuleScript"
+    },
+    {
+        "label": "Tool",
+        "type": "Class",
+        "description": "Represents an in-game tool.",
+        "insertText": "Tool"
+    },
+    {
+        "label": "ReplicatedFirst",
+        "type": "Class",
+        "description": "Represents the replicated first service.",
+        "insertText": "ReplicatedFirst"
+    },
+    {
+        "label": "SoundService",
+        "type": "Class",
+        "description": "Provides access to sounds in Roblox.",
+        "insertText": "SoundService"
+    },
+    {
+        "label": "Character",
+        "type": "Class",
+        "description": "Represents a character in the game.",
+        "insertText": "Character"
+    },
+    {
+        "label": "CoreGui",
+        "type": "Class",
+        "description": "Provides access to the core GUI in Roblox.",
+        "insertText": "CoreGui"
+    },
+    {
+        "label": "ReplicatedStorage",
+        "type": "Class",
+        "description": "Represents the replicated storage service.",
+        "insertText": "ReplicatedStorage"
+    },
+    {
+        "label": "Lighting",
+        "type": "Class",
+        "description": "Represents the game's lighting.",
+        "insertText": "Lighting"
+    },
+    {
+        "label": "PlayerGui",
+        "type": "Class",
+        "description": "Represents the GUI for a player.",
+        "insertText": "PlayerGui"
+    },
+    {
+        "label": "PlayerScript",
+        "type": "Class",
+        "description": "Represents a script that runs on the player's client.",
+        "insertText": "PlayerScript"
+    },
+    {
+        "label": "LocalPlayer",
+        "type": "Class",
+        "description": "Represents the local player.",
+        "insertText": "LocalPlayer"
+    },
+    {
+        "label": "Parent",
+        "type": "Class",
+        "description": "Represents the parent object.",
+        "insertText": "Parent"
     }
 ]
