@@ -24,94 +24,112 @@
         "insertText": "print(${1:Text})"
     },
     {
+        "label": "warn",
+        "type": "Function",
+        "description": "Outputs a warning message to the console.",
+        "insertText": "warn(${1:Warning})"
+    },
+    {
         "label": "wait",
         "type": "Function",
         "description": "Yields the current thread for a specified number of seconds.",
         "insertText": "wait(${1:seconds})"
     },
     {
-        "label": "Vector3.new",
-        "type": "Constructor",
-        "description": "Creates a new Vector3 object.",
-        "insertText": "Vector3.new(${1:x}, ${2:y}, ${3:z})"
-    },
-    {
-        "label": "Part",
-        "type": "Class",
-        "description": "A basic building block in Roblox.",
-        "insertText": "Part"
-    },
-    {
-        "label": "BrickColor.new",
-        "type": "Constructor",
-        "description": "Creates a new BrickColor object.",
-        "insertText": "BrickColor.new(${1:colorName})"
-    },
-    {
-        "label": "Color3.new",
-        "type": "Constructor",
-        "description": "Creates a new Color3 object.",
-        "insertText": "Color3.new(${1:r}, ${2:g}, ${3:b})"
-    },
-    {
-        "label": "math.random",
+        "label": "info",
         "type": "Function",
-        "description": "Generates a random number.",
-        "insertText": "math.random(${1:lower}, ${2:upper})"
+        "description": "Outputs an informational message to the console.",
+        "insertText": "info(${1:Information})"
     },
     {
-        "label": "Humanoid",
-        "type": "Class",
-        "description": "Represents a character's humanoid properties.",
-        "insertText": "Humanoid"
-    },
-    {
-        "label": "Mouse",
-        "type": "Class",
-        "description": "Represents the user's mouse.",
-        "insertText": "Mouse"
-    },
-    {
-        "label": "Players",
-        "type": "Class",
-        "description": "The global Players service.",
-        "insertText": "Players"
-    },
-    {
-        "label": "Player",
-        "type": "Class",
-        "description": "Represents a player in the game.",
-        "insertText": "Player"
-    },
-    {
-        "label": "UserInputService",
-        "type": "Class",
-        "description": "Provides access to user input.",
-        "insertText": "UserInputService"
-    },
-    {
-        "label": "RunService",
-        "type": "Class",
-        "description": "Provides access to the game's run loop.",
-        "insertText": "RunService"
-    },
-    {
-        "label": "tick",
+        "label": "printidentity",
         "type": "Function",
-        "description": "Returns the time elapsed since the UNIX epoch.",
-        "insertText": "tick()"
+        "description": "Prints the identity of an object to the console.",
+        "insertText": "printidentity(${1:Object})"
     },
     {
-        "label": "time",
+        "label": "assert",
         "type": "Function",
-        "description": "Returns the time in seconds since the start of the game session.",
-        "insertText": "time()"
+        "description": "Checks if a condition is true; if not, raises an error.",
+        "insertText": "assert(${1:condition}, ${2:message})"
     },
     {
-        "label": "delay",
+        "label": "collectgarbage",
         "type": "Function",
-        "description": "Runs a function after a delay.",
-        "insertText": "delay(${1:seconds}, ${2:function})"
+        "description": "Controls Lua's garbage collection.",
+        "insertText": "collectgarbage(${1:option})"
+    },
+    {
+        "label": "error",
+        "type": "Function",
+        "description": "Raises an error.",
+        "insertText": "error(${1:message})"
+    },
+    {
+        "label": "getfenv",
+        "type": "Function",
+        "description": "Gets the environment of a function.",
+        "insertText": "getfenv(${1:function})"
+    },
+    {
+        "label": "getgenv",
+        "type": "Function",
+        "description": "Gets the global environment.",
+        "insertText": "getgenv()"
+    },
+    {
+        "label": "getmetatable",
+        "type": "Function",
+        "description": "Gets the metatable of an object.",
+        "insertText": "getmetatable(${1:object})"
+    },
+    {
+        "label": "setmetatable",
+        "type": "Function",
+        "description": "Sets the metatable of an object.",
+        "insertText": "setmetatable(${1:object}, ${2:metatable})"
+    },
+    {
+        "label": "ipairs",
+        "type": "Function",
+        "description": "Iterates over an array-like table.",
+        "insertText": "ipairs(${1:table})"
+    },
+    {
+        "label": "loadfile",
+        "type": "Function",
+        "description": "Loads and compiles a Lua file.",
+        "insertText": "loadfile(${1:filename})"
+    },
+    {
+        "label": "loadstring",
+        "type": "Function",
+        "description": "Loads and compiles a string as Lua code.",
+        "insertText": "loadstring(${1:code})"
+    },
+    {
+        "label": "newproxy",
+        "type": "Function",
+        "description": "Creates a new userdata object with a unique metatable.",
+        "insertText": "newproxy()"
+    },
+    {
+        "label": "next",
+        "type": "Function",
+        "description": "Returns the next key-value pair from a table.",
+        "insertText": "next(${1:table}, ${2:index})"
+    },
+    {
+        "label": "pairs",
+        "type": "Function",
+        "description": "Iterates over all key-value pairs in a table.",
+        "insertText": "pairs(${1:table})"
+    },
+    {
+        "label": "pcall",
+        "type": "Function",
+        "description": "Calls a function in protected mode.",
+        "insertText": "pcall(${1:function}, ${2:args})"
     },
     {
         "label": "spawn",
@@ -120,273 +138,267 @@
         "insertText": "spawn(${1:function})"
     },
     {
-        "label": "Instance:IsA",
+        "label": "rawequal",
         "type": "Function",
-        "description": "Checks if an Instance is a certain class.",
-        "insertText": "Instance:IsA(${1:className})"
+        "description": "Checks if two values are identical without invoking their metamethods.",
+        "insertText": "rawequal(${1:v1}, ${2:v2})"
     },
     {
-        "label": "Instance:Clone",
+        "label": "rawget",
         "type": "Function",
-        "description": "Creates a copy of the Instance and its descendants.",
-        "insertText": "Instance:Clone()"
+        "description": "Gets a value from a table without invoking its metamethods.",
+        "insertText": "rawget(${1:table}, ${2:index})"
     },
     {
-        "label": "Instance:Destroy",
+        "label": "rawset",
         "type": "Function",
-        "description": "Removes the Instance and its descendants.",
-        "insertText": "Instance:Destroy()"
+        "description": "Sets a value in a table without invoking its metamethods.",
+        "insertText": "rawset(${1:table}, ${2:index}, ${3:value})"
     },
     {
-        "label": "Instance:GetChildren",
+        "label": "select",
         "type": "Function",
-        "description": "Returns a table containing all the children of the Instance.",
-        "insertText": "Instance:GetChildren()"
+        "description": "Returns its arguments starting from the given index.",
+        "insertText": "select(${1:index}, ${2:...})"
     },
     {
-        "label": "Instance:FindFirstChild",
+        "label": "tonumber",
         "type": "Function",
-        "description": "Returns the first child of the Instance with the given name.",
-        "insertText": "Instance:FindFirstChild(${1:name})"
+        "description": "Converts a value to a number.",
+        "insertText": "tonumber(${1:value})"
     },
     {
-        "label": "_G",
-        "type": "Keyword",
-        "description": "Global environment table.",
-        "insertText": "_G"
+        "label": "tostring",
+        "type": "Function",
+        "description": "Converts a value to a string.",
+        "insertText": "tostring(${1:value})"
     },
     {
-        "label": "_VERSION",
-        "type": "Keyword",
-        "description": "Lua version string.",
-        "insertText": "_VERSION"
-    },
-    {
-        "label": "Enum",
-        "type": "Class",
-        "description": "Roblox enumeration utility.",
-        "insertText": "Enum"
-    },
-    {
-        "label": "plugin",
-        "type": "Class",
-        "description": "The plugin object for Roblox Studio plugins.",
-        "insertText": "plugin"
-    },
-    {
-        "label": "shared",
-        "type": "Class",
-        "description": "Shared data and functions.",
-        "insertText": "shared"
-    },
-    {
-        "label": "script",
-        "type": "Class",
-        "description": "The script object representing the current script.",
-        "insertText": "script"
-    },
-    {
-        "label": "DebuggerManager",
-        "type": "Keyword",
-        "description": "Manages the debugger in Roblox Studio.",
-        "insertText": "DebuggerManager"
-    },
-    {
-        "label": "elapsedTime",
-        "type": "Keyword",
-        "description": "Elapsed time since the start of the game.",
-        "insertText": "elapsedTime"
-    },
-    {
-        "label": "LoadLibrary",
-        "type": "Keyword",
-        "description": "Loads a library in Roblox Lua.",
-        "insertText": "LoadLibrary"
-    },
-    {
-        "label": "PluginManager",
-        "type": "Keyword",
-        "description": "Manages plugins in Roblox Studio.",
-        "insertText": "PluginManager"
-    },
-    {
-        "label": "settings",
-        "type": "Keyword",
-        "description": "Global settings object.",
-        "insertText": "settings"
-    },
-    {
-        "label": "typeof",
-        "type": "Keyword",
+        "label": "type",
+        "type": "Function",
         "description": "Returns the type of a value.",
-        "insertText": "typeof"
+        "insertText": "type(${1:value})"
     },
     {
-        "label": "UserSettings",
-        "type": "Keyword",
-        "description": "User settings and preferences.",
-        "insertText": "UserSettings"
+        "label": "unpack",
+        "type": "Function",
+        "description": "Returns all elements from a table.",
+        "insertText": "unpack(${1:table})"
     },
     {
-        "label": "HumanoidRootPart",
-        "type": "Keyword",
-        "description": "Represents the root part of a humanoid character.",
-        "insertText": "HumanoidRootPart"
+        "label": "xpcall",
+        "type": "Function",
+        "description": "Calls a function in protected mode with custom error handling.",
+        "insertText": "xpcall(${1:function}, ${2:errorHandler})"
     },
     {
-        "label": "Drawing",
-        "type": "Class",
-        "description": "Handles 2D and 3D drawing in Roblox.",
-        "insertText": "Drawing"
+        "label": "delay",
+        "type": "Function",
+        "description": "Runs a function after a delay.",
+        "insertText": "delay(${1:seconds}, ${2:function})"
     },
     {
-        "label": "debug",
-        "type": "Class",
-        "description": "Provides debugging functions.",
-        "insertText": "debug"
+        "label": "stats",
+        "type": "Function",
+        "description": "Returns statistics about Lua's memory usage.",
+        "insertText": "stats()"
     },
     {
-        "label": "Instance",
-        "type": "Class",
-        "description": "Represents instances of objects in Roblox.",
-        "insertText": "Instance"
+        "label": ":Remove()",
+        "type": "Method",
+        "description": "Removes the object from the game.",
+        "insertText": ":Remove()"
     },
     {
-        "label": "Color3",
-        "type": "Class",
-        "description": "Represents a color with red, green, and blue components.",
-        "insertText": "Color3"
+        "label": ":BreakJoints()",
+        "type": "Method",
+        "description": "Breaks all joints connected to the object.",
+        "insertText": ":BreakJoints()"
     },
     {
-        "label": "Vector3",
-        "type": "Class",
-        "description": "Represents a 3-dimensional vector.",
-        "insertText": "Vector3"
+        "label": ":GetChildren()",
+        "type": "Method",
+        "description": "Returns a table containing all the children of the object.",
+        "insertText": ":GetChildren()"
     },
     {
-        "label": "Vector2",
-        "type": "Class",
-        "description": "Represents a 2-dimensional vector.",
-        "insertText": "Vector2"
+        "label": ":FindFirstChild()",
+        "type": "Method",
+        "description": "Returns the first child of the object with the given name.",
+        "insertText": ":FindFirstChild(${1:name})"
     },
     {
-        "label": "BrickColor",
-        "type": "Class",
-        "description": "Represents a color used for bricks and parts.",
-        "insertText": "BrickColor"
+        "label": ":FireServer()",
+        "type": "Method",
+        "description": "Sends a remote event to the server.",
+        "insertText": ":FireServer()"
     },
     {
-        "label": "math",
-        "type": "Class",
-        "description": "Provides mathematical functions and constants.",
-        "insertText": "math"
+        "label": ":InvokeServer()",
+        "type": "Method",
+        "description": "Invokes a remote function on the server.",
+        "insertText": ":InvokeServer()"
     },
     {
-        "label": "table",
-        "type": "Class",
-        "description": "Provides functions for manipulating tables.",
-        "insertText": "table"
+        "label": ":ClearAllChildren()",
+        "type": "Method",
+        "description": "Removes all children of the object.",
+        "insertText": ":ClearAllChildren()"
     },
     {
-        "label": "string",
-        "type": "Class",
-        "description": "Provides functions for manipulating strings.",
-        "insertText": "string"
+        "label": ":Clone()",
+        "type": "Method",
+        "description": "Creates a copy of the object and its descendants.",
+        "insertText": ":Clone()"
     },
     {
-        "label": "coroutine",
-        "type": "Class",
-        "description": "Provides functions for coroutine manipulation.",
-        "insertText": "coroutine"
+        "label": ":Destroy()",
+        "type": "Method",
+        "description": "Removes the object and its descendants from the game.",
+        "insertText": ":Destroy()"
     },
     {
-        "label": "ClickDetector",
-        "type": "Class",
-        "description": "Detects clicks on parts.",
-        "insertText": "ClickDetector"
+        "label": ":FindFirstAncestor()",
+        "type": "Method",
+        "description": "Returns the nearest ancestor of the object.",
+        "insertText": ":FindFirstAncestor(${1:name})"
     },
     {
-        "label": "LocalScript",
-        "type": "Class",
-        "description": "Represents a script that runs on the client.",
-        "insertText": "LocalScript"
+        "label": ":FindFirstAncestorOfClass()",
+        "type": "Method",
+        "description": "Returns the nearest ancestor of the object with the given class.",
+        "insertText": ":FindFirstAncestorOfClass(${1:className})"
     },
     {
-        "label": "Model",
-        "type": "Class",
-        "description": "Represents a collection of parts and other objects.",
-        "insertText": "Model"
+        "label": ":FindFirstAncestorWhichIsA()",
+        "type": "Method",
+        "description": "Returns the nearest ancestor of the object which is a subclass of the given class.",
+        "insertText": ":FindFirstAncestorWhichIsA(${1:className})"
     },
     {
-        "label": "ModuleScript",
-        "type": "Class",
-        "description": "Represents a script that can be required by other scripts.",
-        "insertText": "ModuleScript"
+        "label": ":FindFirstChildOfClass()",
+        "type": "Method",
+        "description": "Returns the first child of the object with the given class.",
+        "insertText": ":FindFirstChildOfClass(${1:className})"
     },
     {
-        "label": "Tool",
-        "type": "Class",
-        "description": "Represents an in-game tool.",
-        "insertText": "Tool"
+        "label": ":FindFirstChildWhichIsA()",
+        "type": "Method",
+        "description": "Returns the first child of the object which is a subclass of the given class.",
+        "insertText": ":FindFirstChildWhichIsA(${1:className})"
     },
     {
-        "label": "ReplicatedFirst",
-        "type": "Class",
-        "description": "Represents the replicated first service.",
-        "insertText": "ReplicatedFirst"
+        "label": ":GetDebugId()",
+        "type": "Method",
+        "description": "Returns a unique identifier for the object.",
+        "insertText": ":GetDebugId()"
     },
     {
-        "label": "SoundService",
-        "type": "Class",
-        "description": "Provides access to sounds in Roblox.",
-        "insertText": "SoundService"
+        "label": ":GetDescendants()",
+        "type": "Method",
+        "description": "Returns a table containing all descendants of the object.",
+        "insertText": ":GetDescendants()"
     },
     {
-        "label": "Character",
-        "type": "Class",
-        "description": "Represents a character in the game.",
-        "insertText": "Character"
+        "label": ":GetFullName()",
+        "type": "Method",
+        "description": "Returns the full hierarchical name of the object.",
+        "insertText": ":GetFullName()"
     },
     {
-        "label": "CoreGui",
-        "type": "Class",
-        "description": "Provides access to the core GUI in Roblox.",
-        "insertText": "CoreGui"
+        "label": ":IsA()",
+        "type": "Method",
+        "description": "Checks if the object is a subclass of the given class.",
+        "insertText": ":IsA(${1:className})"
     },
     {
-        "label": "ReplicatedStorage",
-        "type": "Class",
-        "description": "Represents the replicated storage service.",
-        "insertText": "ReplicatedStorage"
+        "label": ":GetPropertyChangedSignal()",
+        "type": "Method",
+        "description": "Returns an event that fires when a property of the object changes.",
+        "insertText": ":GetPropertyChangedSignal(${1:propertyName})"
     },
     {
-        "label": "Lighting",
-        "type": "Class",
-        "description": "Represents the game's lighting.",
-        "insertText": "Lighting"
+        "label": ":IsAncestorOf()",
+        "type": "Method",
+        "description": "Checks if the object is an ancestor of another object.",
+        "insertText": ":IsAncestorOf(${1:object})"
     },
     {
-        "label": "PlayerGui",
-        "type": "Class",
-        "description": "Represents the GUI for a player.",
-        "insertText": "PlayerGui"
+        "label": ":IsDescendantOf()",
+        "type": "Method",
+        "description": "Checks if the object is a descendant of another object.",
+        "insertText": ":IsDescendantOf(${1:object})"
     },
     {
-        "label": "PlayerScript",
-        "type": "Class",
-        "description": "Represents a script that runs on the player's client.",
-        "insertText": "PlayerScript"
+        "label": ":WaitForChild()",
+        "type": "Method",
+        "description": "Yields the current thread until a child with the given name appears.",
+        "insertText": ":WaitForChild(${1:name})"
     },
     {
-        "label": "LocalPlayer",
-        "type": "Class",
-        "description": "Represents the local player.",
-        "insertText": "LocalPlayer"
+        "label": ":Connect()",
+        "type": "Method",
+        "description": "Connects a function to an event.",
+        "insertText": ":Connect(${1:function})"
     },
     {
-        "label": "Parent",
-        "type": "Class",
-        "description": "Represents the parent object.",
-        "insertText": "Parent"
+        "label": ":AncestryChanged()",
+        "type": "Method",
+        "description": "Returns an event that fires when the object's ancestry changes.",
+        "insertText": ":AncestryChanged(${1:handler})"
+    },
+    {
+        "label": ":Changed()",
+        "type": "Method",
+        "description": "Returns an event that fires when a property of the object changes.",
+        "insertText": ":Changed(${1:propertyName}, ${2:handler})"
+    },
+    {
+        "label": ":ChildAdded()",
+        "type": "Method",
+        "description": "Returns an event that fires when a child is added to the object.",
+        "insertText": ":ChildAdded(${1:handler})"
+    },
+    {
+        "label": ":ChildRemoved()",
+        "type": "Method",
+        "description": "Returns an event that fires when a child is removed from the object.",
+        "insertText": ":ChildRemoved(${1:handler})"
+    },
+    {
+        "label": ":DescendantAdded()",
+        "type": "Method",
+        "description": "Returns an event that fires when a descendant is added to the object.",
+        "insertText": ":DescendantAdded(${1:handler})"
+    },
+    {
+        "label": ":DescendantRemoving()",
+        "type": "Method",
+        "description": "Returns an event that fires when a descendant is about to be removed from the object.",
+        "insertText": ":DescendantRemoving(${1:handler})"
+    },
+    {
+        "label": ":GetService()",
+        "type": "Method",
+        "description": "Returns the service associated with the object.",
+        "insertText": ":GetService()"
+    },
+    {
+        "label": ":GetObjects()",
+        "type": "Method",
+        "description": "Returns an array containing all descendants of the object that match the given tags.",
+        "insertText": ":GetObjects(${1:tags})"
+    },
+    {
+        "label": ":HttpGet()",
+        "type": "Method",
+        "description": "Sends an HTTP GET request.",
+        "insertText": ":HttpGet(${1:url})"
+    },
+    {
+        "label": ":Wait()",
+        "type": "Method",
+        "description": "Yields the current thread until the object is destroyed.",
+        "insertText": ":Wait()"
     }
 ]
